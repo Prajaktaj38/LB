@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Program119
+{
+    public static void main(String[] args)
+    {
+        int iNo = 175902;
+        System.out.println("Number is : "+iNo); //7529
+        
+        System.out.println(iNo % 10); //2
+        iNo = iNo / 10 ;  //17590       
+        System.out.println("Number is : "+iNo); //7529
+
+         System.out.println(iNo % 10); //0
+        iNo = iNo / 10 ;  // 1759        
+        System.out.println("Number is : "+iNo); //7529
+
+         System.out.println(iNo % 10); //9
+        iNo = iNo / 10 ;  // 1759       
+        System.out.println("Number is : "+iNo); //7529
+
+         System.out.println(iNo % 10); //7
+        iNo = iNo / 10 ;  // 0       
+        System.out.println("Number is : "+iNo); //0
+
+        System.out.println(iNo % 10); //7
+        iNo = iNo / 10 ;  // 1       
+        System.out.println("Number is : "+iNo); //
+
+        System.out.println(iNo % 10); //1
+        iNo = iNo / 10 ;  // 0    
+        System.out.println("Number is : "+iNo); //0
+        
+    }    
+}

@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class Digit
+{
+    public  int SumDigits(int iNo)
+    { 
+        int iSum = 0;
+        if(iNo < 0) //updator
+        {
+            iNo = -iNo;
+        }
+        while(iNo != 0 )
+        {            
+            iSum = iSum + (iNo % 10); 
+            iNo = iNo / 10 ;      
+        }
+           return iSum; 
+    }
+}
+
+public class Program129
+{
+    public static void main(String[] args)
+    {        
+        Scanner scanner = new Scanner(System.in);
+        int iRet = 0;
+        Digit digit = new Digit();
+
+        System.out.println("Enter Number : ");
+        int iValue = scanner.nextInt();
+
+        iRet = digit.SumDigits(iValue);
+        System.out.println("Summession of digits : "+iRet);  
+
+    }    
+}

@@ -1,0 +1,21 @@
+public class Program64
+{
+    public static void main(String A[])
+    {
+        Iteration iobj = new Iteration();
+    iobj.Display();
+
+    } 
+   
+}
+class Iteration
+{
+    public void Display()
+    {
+        int icnt = 0;
+        for (icnt = 6; icnt >=1; icnt--)             //Infinite loop
+        {
+            System.out.println("Jay Ganesh...");
+        }
+    }
+} 
